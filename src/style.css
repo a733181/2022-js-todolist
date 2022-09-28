@@ -1,0 +1,112 @@
+:root {
+  --color-blue-100: #4f74ff;
+  --color-blue-200: #3d47af;
+  --color-blue-300: #0a115a;
+  --color-text: white;
+  --color-placeholder: rgba(255, 255, 255, 0.5);
+  --color-btn: #d103fc;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-blue-100);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.container {
+  width: 500px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: var(--color-blue-200);
+}
+
+.title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid var(--color-blue-300);
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  color: var(--color-text);
+  padding: 5px 10px;
+  margin-bottom: 25px;
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.item {
+  background-color: var(--color-blue-300);
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: auto;
+  padding-right: 5px;
+}
+
+.checkbox {
+  min-width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 2px solid var(--color-blue-100);
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  background-color: var(--color-blue-200);
+}
+
+.checkbox:checked {
+  appearance: auto;
+  -webkit-appearance: auto;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: var(--color-btn);
+  color: var(--color-text-primary);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--color-btn);
+  background-color: var(--color-text);
+}
+
+.btn:active {
+  position: relative;
+  top: 2px;
+}
